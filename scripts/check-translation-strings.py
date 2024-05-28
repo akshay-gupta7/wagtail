@@ -3,7 +3,7 @@ from pathlib import Path
 
 import polib
 
-placeholder_regexp = re.compile(r"\{[^\}]*?\}")
+ placeholder_regexp = re.compile(r"\{[^\}]*?\}")
 
 for path in Path(__file__).parent.resolve().parent.rglob("LC_MESSAGES/*.po"):
     po = polib.pofile(path)
